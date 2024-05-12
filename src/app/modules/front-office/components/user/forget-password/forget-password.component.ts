@@ -17,7 +17,7 @@ export class ForgetPasswordComponent {
   }
 
   forgetPassword() {
-    this.http.put('http://localhost:8010/api/v1/users/auth/forgot-password?email=' + this.email, {})
+    this.http.put('http://localhost:8222/api/v1/users/auth/forgot-password?email=' + this.email, {})
       .pipe(
         finalize(() => {
           // Cette action se déroulera après que la requête est terminée, indépendamment du résultat.
